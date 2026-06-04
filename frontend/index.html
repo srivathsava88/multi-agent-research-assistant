@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Research Assistant</title>
+    <title>Multi-Agent Research Assistant</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Multi-Agent Research Assistant</h1>
+    <div class="container">
 
-<input
-id="topic"
-placeholder="Enter Topic"
-/>
+        <h1>Multi-Agent Research Assistant</h1>
 
-<button onclick="research()">
-Research
-</button>
+        <input
+            type="text"
+            id="topic"
+            placeholder="Enter research topic"
+        >
 
-<pre id="output"></pre>
+        <button onclick="generateReport()">
+            Generate Report
+        </button>
 
-<script src="script.js"></script>
+        <div id="loading"></div>
+
+        <pre id="output"></pre>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
