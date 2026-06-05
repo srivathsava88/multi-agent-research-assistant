@@ -1,18 +1,21 @@
 from agents.gemini_client import model
 
-def research_agent(plan):
+def research_agent(section):
 
     prompt = f"""
-    Perform detailed research.
+    Perform detailed research on:
 
-    Research Plan:
-
-    {plan}
+    {section}
 
     Include:
-    - Key Findings
-    - Trends
+
+    - Explanation
+    - Key concepts
     - Examples
+    - Recent trends
+    - Statistics if available
+
+    Return detailed information.
     """
 
     response = model.generate_content(prompt)
